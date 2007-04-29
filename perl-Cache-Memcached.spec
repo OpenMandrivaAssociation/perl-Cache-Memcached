@@ -39,6 +39,8 @@ make test
 %defattr(644,root,root,755)
 %doc ChangeLog README TODO
 %{perl_vendorlib}/Cache/Memcached.pm
+%dir %{perl_vendorlib}/Cache/Memcached
+%{perl_vendorlib}/Cache/Memcached/GetParser.pm
 %{_mandir}/*/*
 
 
