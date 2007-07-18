@@ -1,6 +1,6 @@
 Summary:	Client library for memcached (memory cache daemon) 
 Name: 		perl-Cache-Memcached
-Version: 	1.23
+Version: 	1.24
 Release:	%mkrel 1
 License:	GPL
 Group: 		Development/Perl
