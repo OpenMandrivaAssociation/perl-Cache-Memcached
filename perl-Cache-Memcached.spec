@@ -10,7 +10,6 @@ BuildRequires:  perl(Storable)
 BuildRequires:  perl(Time::HiRes)
 BuildRequires:  perl(String::CRC32)
 BuildArch:	noarch
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
 
 %description
 This is the Perl API for memcached, a distributed memory cache daemon. See the
