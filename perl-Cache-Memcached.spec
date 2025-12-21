@@ -11,6 +11,7 @@ Group: 		Development/Perl
 Url:		https://search.cpan.org/~bradfitz/Cache-Memcached/
 Source0:	http://search.cpan.org/CPAN/authors/id/B/BR/BRADFITZ/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Storable)
 BuildRequires:	perl(Time::HiRes)
