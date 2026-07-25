@@ -1,15 +1,15 @@
 %define upstream_name    Cache-Memcached
-%define upstream_version 1.29
+%define upstream_version 1.30
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Client library for memcached (memory cache daemon) 
 License:	GPL
 Group: 		Development/Perl
-Url:		https://search.cpan.org/~bradfitz/Cache-Memcached/
-Source0:	http://search.cpan.org/CPAN/authors/id/B/BR/BRADFITZ/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Cache-Memcached
+Source0:	https://cpan.metacpan.org/authors/id/D/DO/DORMANDO/Cache-Memcached-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
