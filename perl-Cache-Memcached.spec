@@ -1,15 +1,13 @@
 %define upstream_name    Cache-Memcached
-%define upstream_version 1.30
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.30
+Release:	2
 
 Summary:	Client library for memcached (memory cache daemon) 
 License:	GPL
 Group: 		Development/Perl
 Url:		https://metacpan.org/dist/Cache-Memcached
-Source0:	https://cpan.metacpan.org/authors/id/D/DO/DORMANDO/Cache-Memcached-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DO/DORMANDO/Cache-Memcached-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -23,7 +21,7 @@ This is the Perl API for memcached, a distributed memory cache daemon. See the
 documentation within the module for details on its use.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -64,9 +62,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.260.0-1mdv2010.0
 + Revision: 402986
-- rebuild using %%perl_convert_version
-
-* Wed May 06 2009 Jérôme Quelin <jquelin@mandriva.org> 1.26-1mdv2010.0
+- rebuild using %1.30 Wed May 06 2009 Jérôme Quelin <jquelin@mandriva.org> 1.26-1mdv2010.0
 + Revision: 372676
 - update to new version 1.26
 
